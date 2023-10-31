@@ -13,5 +13,10 @@ namespace moviestore2110_22876.tutorials.week2
         {
             lblServerTime.Text = DateTime.Now.ToString();
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            lblServerTime.Text = DateTime.Now.ToString();
+        }
     }
 }

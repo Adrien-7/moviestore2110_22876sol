@@ -90,6 +90,20 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                         <li><a runat="server" class="dropdown-item"
                                             href="~/tutorials/week2/task3controlevent">Control Events</a></li>
                                     </ul>
+                                    <a class="dropdown-item dropdown-toggle"
+                                        data-bs-toggle="dropdown" href="#">week 3</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week3/formdemo">Form Demo</a></li>
+                                        <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week2/task3controlevent">Control Events</a></li>
+                                        <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week2/task1datetime">TODO</a></li>
+                                        <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week2/task1datetime">TODO</a></li>
+                                        <li><a runat="server" class="dropdown-item"
+                                            href="~/tutorials/week2/task1datetime">TODO</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -109,12 +123,13 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <div class="row pt-4 my-4">
                     <div class="outer col-sm-9">
 
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
 
                     </div>
                     <aside class="outer col-sm-2 offset-sm-1">
                         <div class="ads d-none d-xl-block">
-                            <asp:Image ID="Image1" ImageUrl="~/images/mac.jpg" runat="server" />
+                            <asp:AdRotator ID="AdRotator1" AdvertisementFile="~/App_Data/ads.xml" CssClass="banner" runat="server" />
                         </div>
                     </aside>
                 </div>

@@ -103,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="App_Data\ads.xml" />
     <Content Include="App_Data\countries.xml" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\apple-touch-icon.png" />
@@ -228,8 +229,17 @@
     <Content Include="Global.asax" />
     <Content Include="home.aspx" />
     <Content Include="homepage.aspx" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\3.jpg" />
     <Content Include="images\avatar-163725.jpg" />
+    <Content Include="images\bell.png" />
+    <Content Include="images\calendar.png" />
+    <Content Include="images\email.png" />
     <Content Include="images\mac.jpg" />
+    <Content Include="images\register.png" />
+    <Content Include="images\smiley.jpg" />
+    <Content Include="images\social.png" />
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -286,6 +296,7 @@
     <Content Include="assets\vendor\remixicon\remixicon.woff" />
     <Content Include="assets\vendor\remixicon\remixicon.woff2" />
     <Content Include="presentomaster.Master" />
+    <Content Include="tutorials\week3\formdemo.aspx" />
     <Content Include="WebForm1.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -435,6 +446,13 @@
     </Compile>
     <Compile Include="tutorials\week2\task3controlevent.aspx.designer.cs">
       <DependentUpon>task3controlevent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week3\formdemo.aspx.cs">
+      <DependentUpon>formdemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week3\formdemo.aspx.designer.cs">
+      <DependentUpon>formdemo.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
