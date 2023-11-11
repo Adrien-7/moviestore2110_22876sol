@@ -1,10 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/guestmasterpage.Master" AutoEventWireup="true" CodeBehind="formdemo.aspx.cs" Inherits="moviestore2110_22876.tutorials.week3.formdemo" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">         
+        function Pass_Val(source, args)
+        {
+            if (args.Value.length > 7)
+                args.IsValid = true;
+            else args.IsValid = false;
+        }      
+
+    </script> 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <h4>Working with Server controls</h4>
+    <asp:ValidationSummary ID="ValidationSummary1" DisplayMode="BulletList" HeaderText="Errors in form are: " ShowMessageBox="true" ShowSummary="true" ForeColor="Red"  runat="server" />
     <hr />
     <div class="mb-3">
 
@@ -36,6 +46,7 @@
 
         <asp:TextBox runat="server" ID="txtFname"
             CssClass="form-control" />
+        <asp:RequiredFieldValidator ID="rfvFname" runat="server" ErrorMessage="First Name is Mandatory" ControlToValidate="txtFname" Display="Dynamic" Text="Required!" SetFocusOnError="true"></asp:RequiredFieldValidator>
 
     </div>
     <div class="mb-3">
@@ -44,6 +55,7 @@
 
         <asp:TextBox runat="server" ID="txtLname"
             CssClass="form-control" />
+        <asp:RequiredFieldValidator ID="rfvLname" runat="server" ErrorMessage="Last Name is Mandatory" ControlToValidate="txtLname" Display="Dynamic" Text="Required!" SetFocusOnError="true"></asp:RequiredFieldValidator>
 
     </div>
     <div class="mb-3">
@@ -62,7 +74,7 @@
 
         <asp:TextBox runat="server" ID="txtdob" TextMode="Date"
             CssClass="form-control" />
-
+          <asp:RangeValidator ID="rvDOB" runat="server" ErrorMessage="DOB out of Range"  ControlToValidate="txtdob" Display="Dynamic" Text="Incorrect!" SetFocusOnError="true" ></asp:RangeValidator>
     </div>
     <div class="mb-3">
         <asp:Label runat="server"
@@ -70,15 +82,24 @@
 
         <asp:TextBox runat="server" ID="txtEmail"
             CssClass="form-control" />
-
+        <asp:RegularExpressionValidator ID="CompareValidator2" runat="server" ErrorMessage="Email is Wrong"  ControlToValidate="txtEmail" Type="Integer" ValidationExpression="^[a-z0-9][-a-z09._]+@([-a-z0-9]+[.])+[a-z]{2,5}$" Operator="DataTypeCheck" Display="Dynamic" Text="Incorrect!" SetFocusOnError="true" ></asp:RegularExpressionValidator>
     </div>
+    <div class="mb-3">
+    <asp:Label runat="server"
+        CssClass="form-label">Mobile</asp:Label>
+
+    <asp:TextBox runat="server" ID="txtMobile"
+        CssClass="form-control" />
+         <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Wrong Data Type"  ControlToValidate="txtMobile" Type="Integer" Operator="DataTypeCheck" Display="Dynamic" Text="Incorrect!" SetFocusOnError="true" ></asp:CompareValidator>
+
+</div>
     <div class="mb-3">
         <asp:Label runat="server"
             CssClass="form-label">Username</asp:Label>
 
         <asp:TextBox runat="server" ID="txtusername"
             CssClass="form-control" />
-
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Email is Wrong"  ControlToValidate="txtEmail" Type="Integer" ValidationExpression="\w{5,10}" Operator="DataTypeCheck" Display="Dynamic" Text="Incorrect!" SetFocusOnError="true" ></asp:RegularExpressionValidator>
     </div>
     <div class="mb-3">
         <asp:Label runat="server"
@@ -86,6 +107,7 @@
 
         <asp:TextBox runat="server" ID="txtPass" TextMode="Password"
             CssClass="form-control" />
+        <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Password has to be between 7 to 12 characters" ControlToValidate="txtPass" ValidateEmptyText="true" ClientValidationFunction="Pass_Val" SetFocusOnError="true" ForeColor="Green" Display="Dynamic" OnServerValidate="CustomValidator1_ServerValidate"></asp:CustomValidator>
 
     </div>
     <div class="mb-3">
@@ -94,7 +116,7 @@
 
         <asp:TextBox runat="server" ID="txtCpass" TextMode="Password"
             CssClass="form-control" />
-
+        <asp:CompareValidator ID="RangeValidator1" runat="server" ErrorMessage="Password does not match"  ControlToValidate="txtCpass" Type="String" Operator="Equal" ControlToCompare="txtPass" Display="Dynamic" Text="Incorrect!" SetFocusOnError="true" ></asp:CompareValidator>
     </div>
 
     <div class="mb-3">
@@ -106,7 +128,7 @@
             <asp:ListItem Value="2">Ohio</asp:ListItem>
             <asp:ListItem Value="3">Florida</asp:ListItem>
         </asp:DropDownList>
-
+        <asp:RequiredFieldValidator ID="rfvState" runat="server" ErrorMessage="State is Mandatory" ControlToValidate="ddlState" Display="Dynamic" InitialValue="-1" Text="Required!" SetFocusOnError="true"></asp:RequiredFieldValidator>
 
     </div>
 
@@ -153,7 +175,7 @@
             CssClass="col-12 btn btn-outline-primary btn-lg" />
     </div>
     <div class="mb-3">
-        <asp:LinkButton ID="lnkExit" runat="server" CssClass="col-12 btn btn-outline-info btn-lg" OnClick="lnkExit_Click">Exit</asp:LinkButton>
+        <asp:LinkButton ID="lnkExit" CausesValidation="false" runat="server" CssClass="col-12 btn btn-outline-info btn-lg" OnClick="lnkExit_Click">Exit</asp:LinkButton>
         </div>
     <div class="mb-3">
         <asp:LinkButton ID="lnkReset" OnClientClick="return confirm('Are you sure?')" CssClass="col-12 btn btn-outline-warning btn-lg" OnClick="lnkReset_Click" runat="server">Reset</asp:LinkButton>

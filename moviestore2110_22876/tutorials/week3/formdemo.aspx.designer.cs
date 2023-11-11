@@ -15,6 +15,15 @@ namespace moviestore2110_22876.tutorials.week3
     {
 
         /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+
+        /// <summary>
         /// radMr control.
         /// </summary>
         /// <remarks>
@@ -51,6 +60,15 @@ namespace moviestore2110_22876.tutorials.week3
         protected global::System.Web.UI.WebControls.TextBox txtFname;
 
         /// <summary>
+        /// rfvFname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFname;
+
+        /// <summary>
         /// txtLname control.
         /// </summary>
         /// <remarks>
@@ -58,6 +76,15 @@ namespace moviestore2110_22876.tutorials.week3
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLname;
+
+        /// <summary>
+        /// rfvLname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLname;
 
         /// <summary>
         /// spWrkExp control.
@@ -87,6 +114,15 @@ namespace moviestore2110_22876.tutorials.week3
         protected global::System.Web.UI.WebControls.TextBox txtdob;
 
         /// <summary>
+        /// rvDOB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rvDOB;
+
+        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
@@ -94,6 +130,33 @@ namespace moviestore2110_22876.tutorials.week3
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
+
+        /// <summary>
+        /// CompareValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator CompareValidator2;
+
+        /// <summary>
+        /// txtMobile control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtMobile;
+
+        /// <summary>
+        /// CompareValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
 
         /// <summary>
         /// txtusername control.
@@ -105,6 +168,15 @@ namespace moviestore2110_22876.tutorials.week3
         protected global::System.Web.UI.WebControls.TextBox txtusername;
 
         /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+        /// <summary>
         /// txtPass control.
         /// </summary>
         /// <remarks>
@@ -112,6 +184,15 @@ namespace moviestore2110_22876.tutorials.week3
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPass;
+
+        /// <summary>
+        /// CustomValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator CustomValidator1;
 
         /// <summary>
         /// txtCpass control.
@@ -123,6 +204,15 @@ namespace moviestore2110_22876.tutorials.week3
         protected global::System.Web.UI.WebControls.TextBox txtCpass;
 
         /// <summary>
+        /// RangeValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator RangeValidator1;
+
+        /// <summary>
         /// ddlState control.
         /// </summary>
         /// <remarks>
@@ -130,6 +220,15 @@ namespace moviestore2110_22876.tutorials.week3
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlState;
+
+        /// <summary>
+        /// rfvState control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvState;
 
         /// <summary>
         /// ddlZipCode control.

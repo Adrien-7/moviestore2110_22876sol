@@ -12,6 +12,9 @@ namespace moviestore2110_22876.tutorials.week3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            rvDOB.MinimumValue = DateTime.Now.AddYears(-45).ToShortDateString();
+            rvDOB.MaximumValue = DateTime.Now.AddYears(-18).ToShortDateString();
+            rvDOB.Type = ValidationDataType.Date;
             if (!Page.IsPostBack)
             {
                 //Populate DropDown Zipcode
@@ -26,25 +29,28 @@ namespace moviestore2110_22876.tutorials.week3
                 //Code to run JUST on initial page visit 
                 txtFname.Focus();
                 //Xml link to populate Dropdown Countries by using Data from File
-                ListItem lidefCountry = new ListItem("Choose Country","-1");
+                ListItem lidefCountry = new ListItem("Choose Country", "-1");
                 string physicalPath = Server.MapPath("~/App_Data/countries.xml");
                 DataSet dstCountries = new DataSet();
                 dstCountries.ReadXml(physicalPath);
                 ddlCountries.DataSource = dstCountries;
                 ddlCountries.DataTextField = "countryName";
-                ddlCountries.DataValueField= "countryId";
+                ddlCountries.DataValueField = "countryId";
                 ddlCountries.DataBind();
-                ddlCountries.Items.Insert(0,lidefCountry);
+                ddlCountries.Items.Insert(0, lidefCountry);
 
             }
-            
+
 
 
         }
 
         protected void btnAddProd_Click(object sender, EventArgs e)
         {
-
+            if (Page.IsValid)
+            {
+                Response.Redirect("~/home");
+            }
         }
 
         protected void txtWrkExp_TextChanged(object sender, EventArgs e)
@@ -85,7 +91,15 @@ namespace moviestore2110_22876.tutorials.week3
         {
             txtFname.Text = "";
             ddlZipCode.SelectedIndex = 0;
-            
+
+        }
+
+        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            if (args.Value.Length<7 && args.Value.Length > 12)
+                args.IsValid = false; 
+            else 
+                args.IsValid = true;
         }
     }
 }
