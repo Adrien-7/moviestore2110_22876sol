@@ -240,7 +240,6 @@
     <Content Include="images\register.png" />
     <Content Include="images\smiley.jpg" />
     <Content Include="images\social.png" />
-    <Content Include="login.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -297,6 +296,14 @@
     <Content Include="assets\vendor\remixicon\remixicon.woff2" />
     <Content Include="presentomaster.Master" />
     <Content Include="tutorials\week3\formdemo.aspx" />
+    <Content Include="tutorials\week5\addressform.ascx" />
+    <Content Include="tutorials\week5\login.aspx" />
+    <Content Include="tutorials\week5\logincrtl.ascx" />
+    <Content Include="tutorials\week5\rndquotation.ascx" />
+    <Content Include="tutorials\week5\showrndquotation.aspx" />
+    <Content Include="tutorials\week5\uc\randomimage.ascx" />
+    <Content Include="tutorials\week5\showaddressform.aspx" />
+    <Content Include="tutorials\week5\showrandomimage.aspx" />
     <Content Include="WebForm1.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -390,13 +397,6 @@
     <Compile Include="homepage.aspx.designer.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="presentomaster.Master.cs">
       <DependentUpon>presentomaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -453,6 +453,62 @@
     </Compile>
     <Compile Include="tutorials\week3\formdemo.aspx.designer.cs">
       <DependentUpon>formdemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\addressform.ascx.cs">
+      <DependentUpon>addressform.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\addressform.ascx.designer.cs">
+      <DependentUpon>addressform.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\logincrtl.ascx.cs">
+      <DependentUpon>logincrtl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\logincrtl.ascx.designer.cs">
+      <DependentUpon>logincrtl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\rndquotation.ascx.cs">
+      <DependentUpon>rndquotation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\rndquotation.ascx.designer.cs">
+      <DependentUpon>rndquotation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\showrndquotation.aspx.cs">
+      <DependentUpon>showrndquotation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\showrndquotation.aspx.designer.cs">
+      <DependentUpon>showrndquotation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\uc\randomimage.ascx.cs">
+      <DependentUpon>randomimage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\uc\randomimage.ascx.designer.cs">
+      <DependentUpon>randomimage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\showaddressform.aspx.cs">
+      <DependentUpon>showaddressform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\showaddressform.aspx.designer.cs">
+      <DependentUpon>showaddressform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\showrandomimage.aspx.cs">
+      <DependentUpon>showrandomimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\showrandomimage.aspx.designer.cs">
+      <DependentUpon>showrandomimage.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
