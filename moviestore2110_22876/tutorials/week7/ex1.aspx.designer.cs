@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Moviestore2110_22894.tutorials.week6
+namespace moviestore2110_22876.tutorials.week7
 {
 
 
@@ -15,12 +15,12 @@ namespace Moviestore2110_22894.tutorials.week6
     {
 
         /// <summary>
-        /// chkCategories control.
+        /// gvs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList chkCategories;
+        protected global::System.Web.UI.WebControls.GridView gvs;
     }
 }

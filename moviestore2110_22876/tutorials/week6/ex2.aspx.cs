@@ -1,17 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data;
-using System.Data.SqlClient;
 using System.Web.Configuration;
 
 
-namespace moviestore2110_22876.tutorials.week6
+namespace Moviestore2110_22894.tutorials.week6
 {
-    public partial class bindchk : System.Web.UI.Page
+    public partial class ex2 : System.Web.UI.Page
+
     {
         private string _conString =
 WebConfigurationManager.ConnectionStrings["MoviesCS"].ConnectionString;
@@ -19,18 +20,24 @@ WebConfigurationManager.ConnectionStrings["MoviesCS"].ConnectionString;
         {
             getCategorylist();
         }
+
         private void getCategorylist()
         {
             // Create Connection
             SqlConnection con = new SqlConnection(_conString);
             // Create Command
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "SELECT * FROM tblCategory";
+            SqlCommand scmd = new SqlCommand();
+            scmd.Connection = con;
+            scmd.CommandType = CommandType.Text;
+            scmd.CommandText = "SELECT * FROM tblCategory";
             con.Open();
-            chkCategory.DataSource = cmd.ExecuteReader();
-            chkCategory.DataBind();
+            rdCategories.DataSource = scmd.ExecuteReader();
+            rdCategories.DataTextField = "Category_Name";
+            rdCategories.DataValueField = "Category_Id";
+            rdCategories.DataBind();
+
+
+
             con.Close();
         }
     }

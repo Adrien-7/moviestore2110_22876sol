@@ -7,20 +7,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace moviestore2110_22876.tutorials.week6
+namespace Moviestore2110_22894.tutorials.week6
 {
 
 
-    public partial class bindchk
+    public partial class ex2
     {
 
         /// <summary>
-        /// chkCategory control.
+        /// rdCategories control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList chkCategory;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdCategories;
     }
 }

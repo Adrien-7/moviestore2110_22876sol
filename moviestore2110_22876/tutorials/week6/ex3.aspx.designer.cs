@@ -11,16 +11,16 @@ namespace Moviestore2110_22894.tutorials.week6
 {
 
 
-    public partial class ex1
+    public partial class ex3
     {
 
         /// <summary>
-        /// chkCategories control.
+        /// BulletedList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList chkCategories;
+        protected global::System.Web.UI.WebControls.BulletedList BulletedList1;
     }
 }

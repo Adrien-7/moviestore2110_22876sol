@@ -10,18 +10,17 @@ using System.Web.Configuration;
 
 namespace Moviestore2110_22894.tutorials.week6
 {
-    public partial class ex1 : System.Web.UI.Page
+    public partial class stats : System.Web.UI.Page
     {
+
         private string _conString =
 WebConfigurationManager.ConnectionStrings["MoviesCS"].ConnectionString;
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            getCategorylist();
-
+            getMovieDetails();
         }
 
-        private void getCategorylist()
+        private void getMovieDetails()
         {
             // Create Connection
             SqlConnection con = new SqlConnection(_conString);
@@ -29,16 +28,12 @@ WebConfigurationManager.ConnectionStrings["MoviesCS"].ConnectionString;
             SqlCommand scmd = new SqlCommand();
             scmd.Connection = con;
             scmd.CommandType = CommandType.Text;
-            scmd.CommandText = "SELECT * FROM tblCategory";
+            scmd.CommandText = "select count(*) from tblmovies";
             con.Open();
-            chkCategories.DataSource = scmd.ExecuteReader();
-            chkCategories.DataTextField = "Category_Name";
-            chkCategories.DataValueField = "Category_Id";
-            chkCategories.DataBind();
+            //Creating a DataReader
+            hymovies.Text= scmd.ExecuteScalar().ToString();
 
-
-
-con.Close();
+          
         }
     }
 }
