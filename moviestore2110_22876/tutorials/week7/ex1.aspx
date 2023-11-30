@@ -7,7 +7,9 @@
            
             <asp:ImageField DataImageUrlField="Poster"
 DataImageUrlFormatString="~/images/{0}"
-HeaderText="Poster" SortExpression="Poster" ControlStyle-Width="100" />                        <asp:TemplateField HeaderText="Box Office"> 
+HeaderText="Poster" SortExpression="Poster" ControlStyle-Width="100" />
+            
+            <asp:TemplateField HeaderText="Box Office"> 
                 <ItemTemplate>
                     <h5>
                     <em>

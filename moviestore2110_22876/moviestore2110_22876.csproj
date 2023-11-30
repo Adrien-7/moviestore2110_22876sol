@@ -105,6 +105,10 @@
     <Content Include="About.aspx" />
     <Content Include="App_Data\ads.xml" />
     <Content Include="App_Data\countries.xml" />
+    <Content Include="App_Data\moviesDB.mdf" />
+    <Content Include="App_Data\moviesDB_log.ldf">
+      <DependentUpon>moviesDB.mdf</DependentUpon>
+    </Content>
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\blog\blog-1.jpg" />
