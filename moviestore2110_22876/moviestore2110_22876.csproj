@@ -105,10 +105,6 @@
     <Content Include="About.aspx" />
     <Content Include="App_Data\ads.xml" />
     <Content Include="App_Data\countries.xml" />
-    <Content Include="App_Data\moviesDB.mdf" />
-    <Content Include="App_Data\moviesDB_log.ldf">
-      <DependentUpon>moviesDB.mdf</DependentUpon>
-    </Content>
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\blog\blog-1.jpg" />
@@ -333,11 +329,13 @@
     <Content Include="tutorials\week5\addressform.ascx" />
     <Content Include="tutorials\week5\login.aspx" />
     <Content Include="tutorials\week5\logincrtl.ascx" />
+    <Content Include="tutorials\week5\register.aspx" />
     <Content Include="tutorials\week5\rndquotation.ascx" />
     <Content Include="tutorials\week5\showrndquotation.aspx" />
     <Content Include="tutorials\week5\uc\randomimage.ascx" />
     <Content Include="tutorials\week5\showaddressform.aspx" />
     <Content Include="tutorials\week5\showrandomimage.aspx" />
+    <Content Include="tutorials\week5\updateprofile.aspx" />
     <Content Include="tutorials\week6\ex1.aspx" />
     <Content Include="tutorials\week6\ex2.aspx" />
     <Content Include="tutorials\week6\ex3.aspx" />
@@ -518,6 +516,13 @@
     <Compile Include="tutorials\week5\logincrtl.ascx.designer.cs">
       <DependentUpon>logincrtl.ascx</DependentUpon>
     </Compile>
+    <Compile Include="tutorials\week5\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
     <Compile Include="tutorials\week5\rndquotation.ascx.cs">
       <DependentUpon>rndquotation.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -552,6 +557,13 @@
     </Compile>
     <Compile Include="tutorials\week5\showrandomimage.aspx.designer.cs">
       <DependentUpon>showrandomimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week5\updateprofile.aspx.cs">
+      <DependentUpon>updateprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week5\updateprofile.aspx.designer.cs">
+      <DependentUpon>updateprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="tutorials\week6\ex1.aspx.cs">
       <DependentUpon>ex1.aspx</DependentUpon>

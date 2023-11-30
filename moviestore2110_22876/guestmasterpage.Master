@@ -87,6 +87,55 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
+                        <!-- Menu to view user profile -->
+                        <asp:Panel runat="server" class="nav navbar-nav" ID="pnlprofile"
+                            Visible="false">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown" role="button" aria-haspopup="true" ariaexpanded="false">Users <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <asp:HyperLink CssClass="dropdown-item"
+                                            runat="server" ID="hyuser"
+                                            NavigateUrl="~/tutorials/week5/updateprofile.aspx">View Profile</asp:HyperLink></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <asp:Button runat="server" ID="btndeacuser"
+                                            Text="Deactivate Account" CssClass="btn btn-outline-danger" /></li>
+                                </ul>
+                            </li>
+                        </asp:Panel>
+
+                        <!--menu to manage movies-->
+                        <asp:Panel runat="server" class="nav navbar-nav" ID="pnlmanagemov"
+                            Visible="false">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown" role="button" aria-haspopup="true" ariaexpanded="false">Manage Movies <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="<%= ResolveClientUrl("~/tutorials/week/viewmovies") %>">View Movies</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a class="dropdown-item" href="<%= ResolveClientUrl("~/tutorials/week/managemovies") %>">Pending request List</a></li>
+                                    <li><a class="dropdown-item" href="<%= ResolveClientUrl("~/tutorials/week/moviesubscriptionlist") %>">Subscription List</a></li>
+                                </ul>
+                            </li>
+                        </asp:Panel>
+                        <!--menu to manage category-->
+                        <asp:Panel runat="server" class="nav navbar-nav"
+                            ID="pnlmanage" Visible="false">
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown" role="button" aria-haspopup="true" ariaexpanded="false">Manage Category <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="<%=
+ResolveClientUrl("~/tutorials/week/managecat") %>">Add Category</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a class="dropdown-item" href="<%=
+ResolveClientUrl("~/tutorials/week/manageclassification") %>">Add
+Classification Level</a></li>
+                                </ul>
+                            </li>
+                        </asp:Panel>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="/testimonials">Testimonials</a></li>
@@ -154,6 +203,11 @@ see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                                 href="~/Register">Register</a></li>
                         </ul>
                     </div>
+                    <asp:Panel runat="server" ID="lgregis">
+ <asp:Label runat="server" ID="lbllgged"></asp:Label>
+ <asp:Button runat="server" ID="btnlgout" OnClick="btnlgout_Click" Text="Log out"
+CssClass="btn btn-outline-info" Visible="false" />
+</asp:Panel>
                 </div>
             </nav>
             <div id="main" class="container body-content">
