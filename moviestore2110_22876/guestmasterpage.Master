@@ -290,7 +290,7 @@ CssClass="btn btn-outline-info" Visible="false" />
                         <br />
                         <asp:Label ID="lblmsg" runat="server"></asp:Label>
                         <div>
-                            <asp:Button ID="btnLogin"
+                            <asp:Button ID="btnLogin" OnClick="btnLogin_Click"
                                 CssClass="btn btn-success btn-block" runat="server" Text="Login" ValidationGroup="subadminlogingroup" />
 
                         </div>

@@ -325,6 +325,13 @@
     <Content Include="assets\vendor\remixicon\remixicon.woff" />
     <Content Include="assets\vendor\remixicon\remixicon.woff2" />
     <Content Include="presentomaster.Master" />
+    <Content Include="tutorials\week11\download.aspx" />
+    <Content Include="tutorials\week11\task1.aspx" />
+    <Content Include="tutorials\week11\task2.aspx" />
+    <Content Include="tutorials\week11\task3.aspx" />
+    <Content Include="tutorials\week11\task4.aspx" />
+    <Content Include="tutorials\week11\task5.aspx" />
+    <Content Include="tutorials\week11\uploaddocument.aspx" />
     <Content Include="tutorials\week3\formdemo.aspx" />
     <Content Include="tutorials\week5\addressform.ascx" />
     <Content Include="tutorials\week5\login.aspx" />
@@ -473,6 +480,55 @@
     </Compile>
     <Compile Include="testimonials.aspx.designer.cs">
       <DependentUpon>testimonials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week11\download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week11\download.aspx.designer.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week11\task1.aspx.cs">
+      <DependentUpon>task1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week11\task1.aspx.designer.cs">
+      <DependentUpon>task1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week11\task2.aspx.cs">
+      <DependentUpon>task2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week11\task2.aspx.designer.cs">
+      <DependentUpon>task2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week11\task3.aspx.cs">
+      <DependentUpon>task3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week11\task3.aspx.designer.cs">
+      <DependentUpon>task3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week11\task4.aspx.cs">
+      <DependentUpon>task4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week11\task4.aspx.designer.cs">
+      <DependentUpon>task4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week11\task5.aspx.cs">
+      <DependentUpon>task5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week11\task5.aspx.designer.cs">
+      <DependentUpon>task5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tutorials\week11\uploaddocument.aspx.cs">
+      <DependentUpon>uploaddocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tutorials\week11\uploaddocument.aspx.designer.cs">
+      <DependentUpon>uploaddocument.aspx</DependentUpon>
     </Compile>
     <Compile Include="tutorials\week2\task1datetime.aspx.cs">
       <DependentUpon>task1datetime.aspx</DependentUpon>
